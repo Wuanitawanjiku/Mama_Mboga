@@ -1,5 +1,5 @@
-import React ,{useState, useEffect} from 'react'
-
+import React ,{useState, useEffect} from 'react';
+import fruits from './Images/greenkiosk6.jpg';
 
 
 
@@ -30,12 +30,14 @@ export default function Fruits(){
     else{
       
         return(
-                      
-            <ul>
+                 <div className="fruit">  
+                  <img className="fruit" src={fruits} alt="fruits"/> 
+            <ul className="fruits">
             {data.map(item =>(
                <li key={item.id}>{item.name}</li> 
             ))}
             </ul>
+            </div>   
  
      )
     }

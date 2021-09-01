@@ -1,4 +1,5 @@
 import React ,{useState, useEffect} from 'react'
+import image from './Images/greenkiosk6.jpg';
 
 
 
@@ -30,12 +31,14 @@ export default function Main(){
     else{
       
         return(
-                      
-            <ul>
+            <div>
+                  <img className="product" src={image} alt="products"/>    
+            <ul className="products">
             {data.map(item =>(
                <li key={item.id}>{item.name}</li> 
             ))}
             </ul>
+            </div>
  
      )
     }

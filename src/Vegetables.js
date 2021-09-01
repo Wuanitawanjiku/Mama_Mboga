@@ -1,4 +1,5 @@
 import React ,{useState, useEffect} from 'react'
+import vegetable  from './Images/greenkiosk6.jpg';
 
 
 
@@ -30,12 +31,14 @@ export default function Vegetables(){
     else{
       
         return(
-                      
-            <ul>
+                <div className="vegetable">   
+                 <img className="vegetables" src={vegetable} alt="vegetable"/> 
+            <ul className="vegies">
             {data.map(item =>(
                <li key={item.id}>{item.name}</li> 
             ))}
             </ul>
+            </div> 
  
      )
     }

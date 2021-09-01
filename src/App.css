@@ -7,7 +7,7 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color:  #fde5b4;
+    background-color:  #ffffff;
     font-family: 'Montserrat', sans-serif;
 }
 ul{
@@ -29,6 +29,7 @@ a{
 }
 .navbar{
     display: flex;
+
 }
 .navbar{
     font-family: 'Montserrat', sans-serif;
@@ -46,7 +47,47 @@ a{
   
 }
 .navbar:hover{
-    border-bottom: 2px solid #FFCBA4;
-    box-shadow: 5px 10px 30px #FFCBA4;
+    border-bottom: 2px solid #18770c;
+    box-shadow: 5px 10px 30px #75a170;
     border-radius: 60px;
+    text-size-adjust: 30px;
+}
+
+.fruits{
+    margin-left: 600px;
+    
+}
+
+.vegies{
+    margin-left: 600px;
+    
+}
+
+.products{
+    margin-left: 800px;
+    margin-bottom: -30%;
+    
+}
+.fruit{
+    width: 60%;
+    height: 60%;   
+    margin-left: 1%;
+    position:absolute;
+    top: 10%;
+}
+
+.product{
+    width: 50%;
+    height: 50%;   
+    margin-left: 1%;
+    position:absolute;
+    top: 15%;
+}
+
+.vegetable{
+    width: 60%;
+    height: 60%;   
+    margin-left: 5%;
+    position:absolute;
+    top: 15%;
 }
